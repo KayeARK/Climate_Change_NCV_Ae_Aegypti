@@ -42,7 +42,7 @@ export_fig Figure1B.pdf -pdf -r300 -Opengl
 
 %% Fig 1C
 
-load('EcologicalNicheGeneration/Mosquitoesperm2LookupTable.mat');
+load('EcologicalNicheGeneration/MLookupTable.mat');
 
 SmallestM(SmallestM>0)=1;
 BiggestM(BiggestM>0)=1;

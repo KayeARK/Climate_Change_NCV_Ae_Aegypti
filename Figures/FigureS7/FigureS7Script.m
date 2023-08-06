@@ -9,7 +9,7 @@ set(0,'defaultAxesTickLabelInterpreter','latex');
 set(0, 'defaultLegendInterpreter','latex')
 set(0,'DefaultAxesColorOrder',brewermap(NaN,'Set2'))
 
-load('../Figure1/EcologicalNicheGeneration/Mosquitoesperm2LookupTable.mat');
+load('../Figure1/EcologicalNicheGeneration/MLookupTable.mat');
 
 MedianM(MedianM>0)=1;
 MedianNiche=MedianM;

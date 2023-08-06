@@ -10,13 +10,13 @@ clc
 %note that here we thin the MCMC chains by picking every 20th element. This
 %makes the computations faster.
 
-a=load('../../FiguresS2toS6/MCMC/Results/a_MCMC_results.mat');
+a=load('../../FigureS2toS6/MCMC/Results/a_MCMC_results.mat');
 a.burntchain=a.burntchain(:,1:20:end);
-gamma=load('../../FiguresS2toS6/MCMC/Results/gamma_MCMC_results.mat');
+gamma=load('../../FigureS2toS6/MCMC/Results/gamma_MCMC_results.mat');
 gamma.burntchain=gamma.burntchain(:,1:20:end);
-invg=load('../../FiguresS2toS6/MCMC/Results/invg_MCMC_results.mat');
+invg=load('../../FigureS2toS6/MCMC/Results/invg_MCMC_results.mat');
 invg.burntchain=invg.burntchain(:,1:20:end);
-p=load('../../FiguresS2toS6/MCMC/Results/p_MCMC_results.mat');
+p=load('../../FigureS2toS6/MCMC/Results/p_MCMC_results.mat');
 p.burntchain=p.burntchain(:,1:20:end);
 
 %% Compute the lookup table
@@ -37,7 +37,7 @@ for i=1:length(Temperatures)
         T=Temperatures(i);
         R=Rainfalls(j);
 
-        MMat=Mosquitoesperm2(T,R,a,gamma,invg,p);
+        MMat=M(T,R,a,gamma,invg,p);
 
         y=[prctile(MMat,2.5),mean(MMat),prctile(MMat,97.5),prctile(MMat,50)];
 
@@ -50,5 +50,5 @@ for i=1:length(Temperatures)
     
 end
 
-save('Mosquitoesperm2LookupTable','MeanM','SmallestM','BiggestM','MedianM','Temperatures','Rainfalls')
+save('MLookupTable','MeanM','SmallestM','BiggestM','MedianM','Temperatures','Rainfalls')
 

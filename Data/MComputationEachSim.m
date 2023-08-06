@@ -1,7 +1,7 @@
 clc
 clear
 
-MLookup=load('../Figures/Figure1/EcologicalNicheGeneration/Mosquitoesperm2LookupTable.mat');
+MLookup=load('../Figures/Figure1/EcologicalNicheGeneration/MLookupTable.mat');
 
 MedianM=MLookup.MedianM;
 BiggestM=MLookup.BiggestM;
@@ -26,7 +26,6 @@ end
 %% 
 
 for p=1:100
-p
 
 TempPrect=load(strcat('ClimateData/TempPrectData202020602100/',c(p).name));
 
