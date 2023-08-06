@@ -8,7 +8,6 @@ decay=1;
 q0=(2./(MParams.invgT.*MParams.aT)).*((1./MParams.pT)+((96/(121*decay)).*(R./MParams.gammaT)));
 flush=1-q0;
 MosPop=flush.*(121/192).*MParams.invgT.*MParams.gammaT;
-MosPop=((300/4.59)*R*(1/25)./(5+245+R))*MosPop; %scales by unit area carrying capacity
 MosPop(isnan(MosPop))=0;
 MosPop(MosPop<0)=0;
 
