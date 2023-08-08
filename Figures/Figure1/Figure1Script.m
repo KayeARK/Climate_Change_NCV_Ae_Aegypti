@@ -57,7 +57,7 @@ MedianNiche=MedianM;
 
 upper=[];
 lower=[];
-for i=2:155  
+for i=2:187  
 upper(i)=find(MedianNiche(:,i),1,'last');
 lower(i)=find(MedianNiche(:,i),1,'first');
 end
@@ -66,7 +66,7 @@ upper=(upper-1)/10;
 lower=(lower-1)/10;
 
 ycords=[upper(2:end), 28.8,28.9,29.0,29.1,29.2,29.3,29.4,29.5,29.6,fliplr(lower(2:end)),upper(2)];
-xcords=[linspace(0.1,15.4,154),15.4,15.4,15.4,15.4,15.4,15.4,15.4,15.4,15.4,fliplr(linspace(0.1,15.4,154)),0.1];
+xcords=[linspace(0.1,18.65,186),18.65,18.65,18.65,18.65,18.65,18.65,18.65,18.65,18.65,fliplr(linspace(0.1,18.65,186)),0.1];
 
 
 figure(2)
@@ -104,7 +104,7 @@ imAlpha(isnan(x))=0;
 imagesc(Rainfalls,Temperatures,x,'AlphaData',imAlpha);
 colormap([0.4000    0.7608    0.6471])
 freezeColors
-xlim([0 25])
+xlim([0 30])
 ylim([0 40])
 set(gca,'YDir','normal')
 set(gca,'FontSize',22)

@@ -26,6 +26,8 @@ end
 %% 
 
 for p=1:100
+    
+p
 
 TempPrect=load(strcat('ClimateData/TempPrectData202020602100/',c(p).name));
 
@@ -51,9 +53,9 @@ R=Rainfall(i,j,l);
 
 k=(300/4.59)*R*(1/25)/(5+245+R); %carrying capacity
 
-MMedian=k*MedianM(min(401,int64(10*T)+1),min(251,int64(10*R)+1));
-MBiggest=k*BiggestM(min(401,int64(10*T)+1),min(251,int64(10*R)+1));
-MSmallest=k*SmallestM(min(401,int64(10*T)+1),min(251,int64(10*R)+1));
+MMedian=k*MedianM(min(401,int64(10*T)+1),min(301,int64(10*R)+1));
+MBiggest=k*BiggestM(min(401,int64(10*T)+1),min(301,int64(10*R)+1));
+MSmallest=k*SmallestM(min(401,int64(10*T)+1),min(301,int64(10*R)+1));
            
 MMedianMat(i,j,l)=MMedian;
 MSmallestMat(i,j,l)=MSmallest;

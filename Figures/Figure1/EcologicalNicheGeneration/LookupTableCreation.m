@@ -22,7 +22,7 @@ p.burntchain=p.burntchain(:,1:20:end);
 %% Compute the lookup table
 
 Temperatures=linspace(0,40,401);
-Rainfalls=linspace(0,25,251);
+Rainfalls=linspace(0,30,301);
 
 MeanM=zeros(length(Temperatures),length(Rainfalls));
 BiggestM=zeros(length(Temperatures),length(Rainfalls));
