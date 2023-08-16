@@ -45,6 +45,7 @@ plabel off
 myColorMap=parula(256);
 myColorMap(1,:)=1;
 colormap(myColorMap);
+WorstCase2100M(80,123)=2;
 surfm(lat,lon,WorstCase2100M')
 framem('FEdgeColor','black','FLineWidth',1)
 hidem(gca)
