@@ -50,7 +50,7 @@ end
 temp=aT;
 resp=a;
 
-testx=linspace(0,max(temp)+10,100);
+testx=linspace(0,50,100);
 cmean=mean(burntchain(1,:));
 T0mean=mean(burntchain(2,:));
 Tmmean=mean(burntchain(3,:));
@@ -257,7 +257,7 @@ end
 temp=gammaT;
 resp=gamma;
 
-testx=linspace(0,max(temp)+10,100);
+testx=linspace(0,50,100);
 cmean=mean(burntchain(1,:));
 T0mean=mean(burntchain(2,:));
 Tmmean=mean(burntchain(3,:));
@@ -456,7 +456,7 @@ end
 temp=pT;
 resp=p;
 
-testx=linspace(0,max(temp)+10,100);
+testx=linspace(0,50,100);
 cmean=mean(burntchain(1,:));
 T0mean=mean(burntchain(2,:));
 Tmmean=mean(burntchain(3,:));
@@ -658,7 +658,7 @@ end
 temp=gT;
 resp=g;
 
-testx=linspace(0,max(temp)+10,100);
+testx=linspace(0,50,100);
 cmean=mean(burntchain(1,:));
 T0mean=mean(burntchain(2,:));
 Tmmean=mean(burntchain(3,:));
