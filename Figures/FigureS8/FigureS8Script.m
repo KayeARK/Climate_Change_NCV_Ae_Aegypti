@@ -19,6 +19,20 @@ x=table2array(data(:,7));
 y=table2array(data(:,6));
 
 
+%This code extracts the densely packed points around Brazil in order to
+%plot them with a smaller marker size for better clarity.
+xboxloc=(x<-23.5 & x>-55);
+yboxloc=(y<-0.5 & y>-35);
+locs=xboxloc&yboxloc;
+
+xbox=x(locs);
+ybox=y(locs);
+
+x(locs)=[];
+y(locs)=[];
+
+
+
 %% 
 
 load coastlines
@@ -52,7 +66,8 @@ framem('FEdgeColor','black','FLineWidth',1)
 hidem(gca)
 surfm(lato,lono,ocean)
 plotm(coastlat,coastlon,'LineWidth',1,'Color','black')
-scatterm(y,x,0.5,'k','filled')
+scatterm(y,x,1.5,'k','filled')
+scatterm(ybox,xbox,0.3,'k','filled')
 cbr=colorbar('SouthOutside');
 caxis([0,12])
 set(cbr,'YTick',0:2:12)

@@ -25,7 +25,7 @@ MATT=zeros(288,192,36,100);
 
 for p=1:100
    p 
-x=load(strcat('/home/alexkaye/Desktop/Thesis Chapter 1/Final Code/Data/TempPrect Data 202020602100/',c(p).name));
+x=load(strcat('ClimateData/TempPrectData202020602100/',c(p).name));
 Temp=x.T;
 Prect=x.R;
 

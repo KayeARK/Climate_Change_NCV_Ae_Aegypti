@@ -12,7 +12,7 @@ set(0,'DefaultAxesColorOrder',brewermap(NaN,'Set2'))
 
 %% Fig 1B
 
-gamma=load('/home/alexkaye/Desktop/Thesis Chapter 1/Code/MCMC and Fits/Aegypti Parameter Fits/My Fits/MDRParasAegypti.mat');
+gamma=load('../FigureS2toS6/MCMC/Results/gamma_MCMC_results.mat');
 
 L=101;
 x=linspace(0,50,L);
