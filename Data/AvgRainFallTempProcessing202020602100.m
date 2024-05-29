@@ -20,8 +20,8 @@ for i=1:length(S)
 end
 
  
-MATR=zeros(288,192,36,100);
-MATT=zeros(288,192,36,100);
+MATR=zeros(288,192,48,100);
+MATT=zeros(288,192,48,100);
 
 for p=1:100
    p 
