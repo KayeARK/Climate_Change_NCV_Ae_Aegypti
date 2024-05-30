@@ -40,17 +40,22 @@ lato=fliplr(linspace(-90,90,1000));
 
 %% Stats
 
+
 disp(['In 2100, London will have between ',num2str(BestCase2100M(144,151)),' and ', num2str(WorstCase2100M(144,151)),' months of suitability compared to ',num2str(AvgSim2100M(144,151)),' months when we use the mean of the climate projections.'])
 disp(['In 2100, Cape Town will have between ',num2str(BestCase2100M(159,60)),' and ', num2str(WorstCase2100M(159,60)),' months of suitability compared to ',num2str(AvgSim2100M(159,60)),' months when we use the mean of the climate projections.'])
+disp(['In 2100, Khartoum will have between ',num2str(BestCase2100M(170,113)),' and ', num2str(WorstCase2100M(170,113)),' months of suitability compared to ',num2str(AvgSim2100M(170,113)),' months when we use the mean of the climate projections.'])
 
-disp(['In 2050, London will have between ',num2str(BestCase2050M(144,151)),' and ', num2str(WorstCase2050M(144,151)),' months of suitability compared to ',num2str(AvgSim2050M(144,151)),' months when we use the mean of the climate projections.'])
-disp(['In 2050, Cape Town will have between ',num2str(BestCase2050M(159,60)),' and ', num2str(WorstCase2050M(159,60)),' months of suitability compared to ',num2str(AvgSim2050M(159,60)),' months when we use the mean of the climate projections.'])
+%disp(['In 2050, London will have between ',num2str(BestCase2050M(144,151)),' and ', num2str(WorstCase2050M(144,151)),' months of suitability compared to ',num2str(AvgSim2050M(144,151)),' months when we use the mean of the climate projections.'])
+%disp(['In 2050, Cape Town will have between ',num2str(BestCase2050M(159,60)),' and ', num2str(WorstCase2050M(159,60)),' months of suitability compared to ',num2str(AvgSim2050M(159,60)),' months when we use the mean of the climate projections.'])
+%disp(['In 2050, Khartoum will have between ',num2str(BestCase2050M(170,113)),' and ', num2str(WorstCase2050M(170,113)),' months of suitability compared to ',num2str(AvgSim2050M(170,113)),' months when we use the mean of the climate projections.'])
 
 disp(['In 2060, London will have between ',num2str(BestCase2060M(144,151)),' and ', num2str(WorstCase2060M(144,151)),' months of suitability compared to ',num2str(AvgSim2060M(144,151)),' months when we use the mean of the climate projections.'])
 disp(['In 2060, Cape Town will have between ',num2str(BestCase2060M(159,60)),' and ', num2str(WorstCase2060M(159,60)),' months of suitability compared to ',num2str(AvgSim2060M(159,60)),' months when we use the mean of the climate projections.'])
+disp(['In 2060, Khartoum will have between ',num2str(BestCase2060M(170,113)),' and ', num2str(WorstCase2060M(170,113)),' months of suitability compared to ',num2str(AvgSim2060M(170,113)),' months when we use the mean of the climate projections.'])
 
 disp(['In 2020, London will have between ',num2str(BestCase2020M(144,151)),' and ', num2str(WorstCase2020M(144,151)),' months of suitability compared to ',num2str(AvgSim2020M(144,151)),' months when we use the mean of the climate projections.'])
 disp(['In 2020, Cape Town will have between ',num2str(BestCase2020M(159,60)),' and ', num2str(WorstCase2020M(159,60)),' months of suitability compared to ',num2str(AvgSim2020M(159,60)),' months when we use the mean of the climate projections.'])
+disp(['In 2020, Khartoum will have between ',num2str(BestCase2020M(170,113)),' and ', num2str(WorstCase2020M(170,113)),' months of suitability compared to ',num2str(AvgSim2020M(170,113)),' months when we use the mean of the climate projections.'])
 
 %% 
 
