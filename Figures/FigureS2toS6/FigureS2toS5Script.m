@@ -210,6 +210,7 @@ scatter(temp,resp,'filled','MarkerFaceColor',[0.4000    0.7608    0.6471])
 xlabel("Temperature,{\it T} ($^{\circ}$C)")
 ylabel({"Birth rate,"; "$a(T)$ (day$^{-1}$)"})
 xlim([0 50])
+ylim([0,15])
 box on
 
 ax=gca;
@@ -225,7 +226,7 @@ scatter(temp,resp,'filled','MarkerFaceColor',[0.4000    0.7608    0.6471])
 xlabel("Temperature,{\it T} ($^{\circ}$C)")
 ylabel({"Birth rate,"; "$a(T)$ (day$^{-1}$)"})
 xlim([0 50])
-ylim([0,17])
+ylim([0,15])
 legend("Median","$95\%$ CrI","Data",'Location','northwest');
 ax=gca;
 p=get(ax,'Position');
@@ -611,6 +612,7 @@ scatter(temp,resp,'filled','MarkerFaceColor',[0.4000    0.7608    0.6471])
 xlabel("Temperature,{\it T} ($^{\circ}$C)")
 ylabel({"Egg-to-adult survival";"probability, $p(T)$"})
 xlim([0 50])
+ylim([0 1.5])
 box on
 
 ax=gca;
@@ -626,7 +628,7 @@ scatter(temp,resp,'filled','MarkerFaceColor',[0.4000    0.7608    0.6471])
 xlabel("Temperature,{\it T} ($^{\circ}$C)")
 ylabel({"Egg-to-adult survival";"probability, $p(T)$"})
 xlim([0 50])
-ylim([0 1.6])
+ylim([0 1.5])
 legend("Median","$95\%$ CrI","Data",'Location','northwest');
 ax=gca;
 p=get(ax,'Position');
@@ -812,6 +814,7 @@ scatter(temp,resp,'filled','MarkerFaceColor',[0.4000    0.7608    0.6471])
 xlabel("Temperature,{\it T} ($^{\circ}$C)")
 ylabel({"Adult lifespan,";"$\frac{1}{g(T)}$ (days)"})
 xlim([0 50])
+ylim([0 50])
 box on
 
 ax=gca;
@@ -827,7 +830,7 @@ scatter(temp,resp,'filled','MarkerFaceColor',[0.4000    0.7608    0.6471])
 xlabel("Temperature,{\it T} ($^{\circ}$C)")
 ylabel({"Adult lifespan,";"$\frac{1}{g(T)}$ (days)"})
 xlim([0 50])
-ylim([0 60])
+ylim([0 50])
 legend("Median","$95\%$ CrI","Data",'Location','northwest');
 ax=gca;
 p=get(ax,'Position');

@@ -1,0 +1,17 @@
+Data=ncinfo('b.e21.BSSP245smbb.f09_g17.016.cam.h0.TREFHT.210001-210012.nc');
+
+T=ncread('b.e21.BSSP245smbb.f09_g17.016.cam.h0.TREFHT.210001-210012.nc','TREFHT');
+T=T-273.15;
+
+load coastlines
+lon=linspace(-180,180,288);
+lat=linspace(-90,90,192);
+latlim=[-90,90];
+lonlim=[-180,180];
+axesm('robinson','MapLatLimit',latlim,'MapLonLimit',lonlim)
+gridm off
+mlabel off
+plabel off
+surfm(lat,lon,temp(:,:,1)')
+
+%prect=prect*86.4e6;
